@@ -1,0 +1,168 @@
+@import url("https://cdn.web-fonts.ge/fonts/dejavu-sans/css/dejavu-sans.min.css");
+
+* {
+    box-sizing: border-box;
+}
+
+body,h2,p {
+    margin: 0;
+    font-family: "DejaVu Sans", sans-serif;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    width: 70%;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: calc(100%/3);
+    max-width: calc(100%/3);
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+.intro {
+    width: 50%;
+    margin: 8% auto;
+}
+
+.intro p {
+    font-size: 1.5rem;
+}
+.each_user_info_common_container{
+    max-width: 800px;
+    padding-top: 100px;
+}
+.each_user_info,
+.each_user_info_common_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.each_user_info_common_container img{
+    width: 60%;
+    padding: 5% 0;
+}
+.each_user_info{
+    display: none;
+}
+.back_arrow {
+    font-size: 50px;
+    color: #e05b43;
+    left: 5%;
+    top: 3%;
+    cursor: pointer;
+    position: absolute;
+}
+.each_user_history_container{
+    display: none;
+}
+.title{
+    font-size: 2.5rem;
+    margin: 0;
+}
+.subtitle{
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 5%;
+}
+.hitory{
+    font-size: 1.3rem;    
+    padding-bottom: 8%;
+}
+.video_container{
+    padding-bottom: 5%;
+}
+
+footer {
+    margin-bottom: 5%;
+}
+.authors-container p {
+    font-size: 1.2rem;
+}
+.authors-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.authors-container:before {
+    border-top: 2px solid #e77454;
+    content: "";
+    display: block;
+    margin: 1rem auto;
+    min-width: 300px;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+    .intro{
+        width: 70%;
+    }
+    .intro p{
+        font-size: 1.3rem;
+    }
+    .authors-container h2{
+        font-size: 1.3rem;
+    }
+    .back_arrow{
+        top: 1%;
+    }
+    .each_user_info_common_container{
+        padding-top: 80px;
+        width: 85%;
+    }
+    .each_user_info_common_container img{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .title{
+        font-size: 1.8rem;
+    }
+    .subtitle{
+        font-size: 1.2rem;
+    }
+    .row,.intro{
+        width: 85%;
+    }
+    iframe{
+        width: 380px;
+        height: 250px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .hitory{
+        font-size: 1rem;    
+    }
+    iframe{
+        width: 320px;
+        height: 220px;
+    }
+}
