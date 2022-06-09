@@ -13,11 +13,12 @@ body,h2,p {
     text-align: center;
     padding: 32px;
     color: #ed610f;
+    font-size: 1.3rem;
 }
 
 .row {
     width: 70%;
-    margin: 8% auto;
+    margin: 4% auto;
     display: -ms-flexbox;
     /* IE10 */
     display: flex;
@@ -41,12 +42,14 @@ body,h2,p {
 
 
 .intro {
-    width: 65%;
+    width: 70%;
     margin: auto;
 }
-
+.bottom_side{
+    padding: 5% 0;
+}
 .intro p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 .each_user_info_common_container{
     max-width: 800px;
@@ -165,6 +168,9 @@ footer {
     iframe{
         width: 380px;
         height: 250px;
+    }
+    .header{
+        font-size: 1.1rem;
     }
 }
 @media screen and (max-width: 400px) {
