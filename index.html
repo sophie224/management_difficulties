@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>მართვის სირთულეები </title>
+    <title>Привет კულტურა</title>
     <style>
         @import url("https://cdn.web-fonts.ge/fonts/dejavu-sans/css/dejavu-sans.min.css");
 
@@ -31,7 +31,7 @@
 
         .row {
             width: 70%;
-            margin: 4% auto;
+            margin: 7% auto;
             display: -ms-flexbox;
             /* IE10 */
             display: flex;
@@ -53,18 +53,32 @@
             width: 100%;
         }
 
+        .img_container {
+            position: relative;
+        }
+
+        .img_container p {
+            position: absolute;
+            font-size: 25px;
+            bottom: 5%;
+            color: white;
+            left: 5%;
+            opacity: 0;
+        }
+
+        .img_container :hover+.name {
+            opacity: 1;
+            transition: 4s;
+        }
 
         .intro {
             width: 70%;
             margin: auto;
-        }
-
-        .bottom_side {
-            padding: 5% 0;
+            text-align: center;
         }
 
         .intro p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
 
         .each_user_info_common_container {
@@ -72,15 +86,12 @@
             padding-top: 100px;
         }
 
-        .user_info_route:hover {
-            -ms-transform: scale(1.5);
-            /* IE 9 */
-            -webkit-transform: scale(1.5);
-            /* Safari 3-8 */
+        .img_container:hover {
             transform: scale(1.1);
+            z-index: 1;
         }
 
-        .user_info_route {
+        .img_container {
             transition: transform .7s;
             cursor: pointer;
         }
@@ -109,6 +120,34 @@
             top: 3%;
             cursor: pointer;
             position: absolute;
+        }
+
+        .more_story {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .more_story button {
+            cursor: pointer;
+            margin: 4% auto;
+            padding: 1% 2%;
+            color: #000000;
+            font-size: 15px;
+            font-family: 'Ukrainian-Institut', Arial, sans-serif;
+            line-height: 1.55;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            border-width: 2px;
+            border-radius: 30px;
+            background-color: transparent;
+        }
+
+        .more_story button:hover {
+            background-color: black;
+            color: white;
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
         }
 
         .each_user_history_container {
@@ -365,65 +404,10 @@
         </div>
     </div>
     <div class="header">
-        <h1>მართვის სირთულეები </h1>
+        <h1>Привет კულტურა</h1>
     </div>
     <div class="main_container">
         <div class="intro">
-            <p>
-                მინისტრები ხშირად ამბობენ, რომ მართვა რთულია. <br>
-                კულტურის მინისტრმა ამ პოსტზე დანიშვნისთანავე თქვა, რომ თუ მსახიობი განსხვავებულ აზრს გამოთქვამდა,
-                ეცდებოდა ენახა, საიდან მოდის ეს აზრი.<br>
-                რომ მუზეუმები გაძარცვულია და ისინი მხოლოდ ქაღალდზე არსებობს.<br>
-                რომ აფრთხილებდნენ, კულტურის მუშაკები პატიმრები არ გეგონოს, უფრო რთული ხალხიაო.<br>
-                და რომ როცა სხვებს ულოცავენ მინისტრის პოსტს, მას უსამძიმრებდნენ, რომ იმ ხალხთან ექნებოდა საქმე, ვინც
-                ყველა მინისტრს სისხლს უშრობდა.<br>
-                მართვა რთულია და ამისთვის ზოგჯერ საჭიროა რეორგანიზაცია, ადამიანების სამსახურიდან დათხოვა და ახალი
-                კადრების გაწვრთნა.<br>
-                მართვა რთულია იმიტომაც, რომ გათავისუფლებული ადამიანები ბრაზდებიან და სხვებს უყვებიან, როგორი ძნელია იყო
-                უსამართლობის მსხვერპლი, შეურაცხყოფილი.<br>
-                იშვიათად, მაგრამ იმასაც კითხულობენ, რა საჭიროა მართული ხელოვნება და ხელისუფლების სამსახურში ჩაყენებული
-                კულტურა.<br>
-                იქნებ მართვა იმიტომაც არის რთული, რომ ამ ხმებს არ უნდა მოუსმინო, მტკიცე უნდა იყო.
-            </p>
-        </div>
-
-        <!-- Photo Grid -->
-        <div class="row">
-            <div class="column">
-                <img class="user_info_route" src="https://gdb.rferl.org/0ff70000-0aff-0242-7356-08da4a1f77da.jpg" style="width:100%">
-                <img class="user_info_route" src="https://gdb.rferl.org/0f500000-0aff-0242-51be-08da4942346c.jpg"
-                    style="width:100%">
-                <img class="user_info_route" src="https://gdb.rferl.org/4004d9b2-785e-46b6-b734-3f5fd12b590b.jpg"
-                    style="width:100%">
-                <img class="user_info_route" src="https://gdb.rferl.org/08de0000-0a00-0242-9eec-08da47d72b0f.png"
-                    style="width:100%">
-                <img class="user_info_route" src="https://gdb.rferl.org/0f210000-0aff-0242-6fb7-08da47d72b0a.png"
-                    style="width:100%">
-
-            </div>
-            <div class="column">
-                <img class="user_info_route" src="https://gdb.rferl.org/0f500000-0aff-0242-feca-08da4a1f77d5.jpg" style="width:100%">
-                <img class="user_info_route" src="https://gdb.rferl.org/0f500000-0aff-0242-eaeb-08da4a1f77e8.jpg" style="width:100%">
-                <img class="user_info_route" src="https://gdb.rferl.org/08de0000-0a00-0242-195c-08da476d5ffb.jpeg"
-                    style="width:100%">
-                <img class="user_info_route" src="https://gdb.rferl.org/0f500000-0aff-0242-12c2-08da47d733d1.png"
-                    style="width:100%">
-                <img class="user_info_route" src="https://gdb.rferl.org/0f210000-0aff-0242-c5ff-08da47db9c82.jpg"
-                    style="width:100%">
-            </div>
-            <div class="column">
-                <img class="user_info_route" src="https://gdb.rferl.org/0f500000-0aff-0242-321a-08da4a1f7983.jpg" style="width:100%">
-                <img class="user_info_route" src="https://gdb.rferl.org/0f210000-0aff-0242-81e0-08da47d73038.png"
-                    style="width:100%">
-                <img class="user_info_route" src="https://gdb.rferl.org/0f210000-0aff-0242-5017-08da47d72f26.png"
-                    style="width:100%">
-                <img class="user_info_route" src="https://gdb.rferl.org/0f500000-0aff-0242-22a6-08da4a1f78d8.jpg" style="width:100%">
-                <img class="user_info_route" src="https://gdb.rferl.org/08de0000-0a00-0242-fe60-08da47ddf19d.jpeg"
-                    style="width:100%">
-            </div>
-        </div>
-
-        <div class="intro bottom_side">
             <p>
                 2021 წლის მარტში კულტურის სამინისტრო განათლების სამინისტროს გამოეყო და მისი მინისტრი თეა წულუკიანი
                 გახდა. წულუკიანის ხელმძღვანელობის პირველ ერთ წელიწადში სამინისტროდან და მისი დაქვემდებარებული
@@ -441,6 +425,90 @@
                 კულტურას მოთვინიერება სჭირდება. ეს ის საკითხებია, რომლებიც ბევრი წელია განვითარების ხელის შემშლელი
                 ფაქტორებია და რომლებიც ახალი სიმწვავით გააცოცხლა თეა წულუკიანის დანიშვნამ.
             </p>
+        </div>
+        <!-- Photo Grid -->
+        <div class="row">
+            <div class="column">
+                <div class="img_container">
+                    <img class="user_info_route" src="https://gdb.rferl.org/0ff70000-0aff-0242-7356-08da4a1f77da.jpg"
+                        style="width:100%">
+                    <p class="name">დავით ნიორაძე</p>
+                </div>
+                <div class="img_container">
+                    <img class="user_info_route" src="https://gdb.rferl.org/0f500000-0aff-0242-51be-08da4942346c.jpg"
+                    style="width:100%">
+                    <p class="name">ნინო ჯაყელი </p>
+                </div>
+                <div class="img_container">
+                    <img class="user_info_route" src="https://gdb.rferl.org/4004d9b2-785e-46b6-b734-3f5fd12b590b.jpg"
+                    style="width:100%">
+                    <p class="name">ეკა კიკნაძე</p>
+                </div>
+                <div class="img_container">
+                    <img class="user_info_route" src="https://gdb.rferl.org/08de0000-0a00-0242-9eec-08da47d72b0f.png"
+                    style="width:100%">
+                    <p class="name">გაგა ჩხეიძე</p>
+                </div>
+                <div class="img_container">
+                    <img class="user_info_route" src="https://gdb.rferl.org/0f210000-0aff-0242-6fb7-08da47d72b0a.png"
+                    style="width:100%">
+                    <p class="name">ლაშა ჩხვიმიანი</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="img_container">
+                    <img class="user_info_route" src="https://gdb.rferl.org/0f500000-0aff-0242-feca-08da4a1f77d5.jpg"
+                    style="width:100%">
+                    <p class="name">ირმა კოპალიანი</p>
+                </div>
+                <div class="img_container">
+                    <img class="user_info_route" src="https://gdb.rferl.org/0f500000-0aff-0242-eaeb-08da4a1f77e8.jpg"
+                    style="width:100%">
+                    <p class="name">ნინო ხუნდაძე</p>
+                </div>
+                <div class="img_container">
+                    <img class="user_info_route" src="https://gdb.rferl.org/08de0000-0a00-0242-195c-08da476d5ffb.jpeg"
+                    style="width:100%">
+                    <p class="name">ნანა ბურჭულაძე</p>
+                </div>
+                <div class="img_container">
+                    <img class="user_info_route" src="https://gdb.rferl.org/0f500000-0aff-0242-12c2-08da47d733d1.png"
+                    style="width:100%">
+                    <p class="name">ბესო სოლომანაშვილი</p>
+                </div>
+                <div class="img_container">
+                    <img class="user_info_route" src="https://gdb.rferl.org/0f210000-0aff-0242-c5ff-08da47db9c82.jpg"
+                    style="width:100%">
+                    <p class="name">ნიკოლოზ წიქარიძე</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="img_container">
+                    <img class="user_info_route" src="https://gdb.rferl.org/0f500000-0aff-0242-321a-08da4a1f7983.jpg"
+                    style="width:100%">
+                    <p class="name">გვანცა ბერძენიშვილი</p>
+                </div>
+                <div class="img_container">
+                    <img class="user_info_route" src="https://gdb.rferl.org/0f210000-0aff-0242-81e0-08da47d73038.png"
+                    style="width:100%">
+                    <p class="name">სალომე ჯაში</p>
+                </div>
+                <div class="img_container">
+                    <img class="user_info_route" src="https://gdb.rferl.org/0f210000-0aff-0242-5017-08da47d72f26.png"
+                    style="width:100%">
+                    <p class="name">გიორგი გაგოშიძე</p>
+                </div>
+                <div class="img_container">
+                    <img class="user_info_route" src="https://gdb.rferl.org/0f500000-0aff-0242-22a6-08da4a1f78d8.jpg"
+                    style="width:100%">
+                    <p class="name">მიხეილ ჩარკვიანი</p>
+                </div>
+                <div class="img_container">
+                    <img class="user_info_route" src="https://gdb.rferl.org/08de0000-0a00-0242-fe60-08da47ddf19d.jpeg"
+                    style="width:100%">
+                    <p class="name">ანა მგელაძე</p>
+                </div>
+            </div>
         </div>
     </div>
     <section class="each_user_history_container">
@@ -1007,6 +1075,9 @@
         </div>
         <!-- third section end -->
 
+        <div class="more_story">
+            <button onClick="window.location.reload();">სხვა ისტორიები</button>
+        </div>
     </section>
 
     <footer>
